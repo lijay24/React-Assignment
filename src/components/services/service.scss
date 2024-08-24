@@ -1,0 +1,67 @@
+@import "../scss/variables";
+@import "../scss/extend";
+@import "../scss/includes";
+
+
+#services{
+  max-width: 1066px;
+  min-height: 373px;
+  margin: auto;
+  margin-top: 108px;
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
+radial-gradient(50% 50% at 50% 50%, rgba(26, 21, 21, 0) 0%, rgba(1, 1, 1, 0.16) 100%);
+
+@include mobile {
+  .line_l1{
+    flex-direction: column;
+    width: 100%;
+  }
+  
+}
+@include tablet {
+  .line_l1{
+    flex-direction: row;
+  }
+}
+.boxa{
+  @extend .servicea
+}
+h3{
+  font-family: "montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.82px;
+  letter-spacing: 0.1854em;
+  text-align: center;
+}
+p{
+  margin-top: 32.1px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 300;
+   line-height: 19.07px;
+   text-align: justify;
+}
+.boxb{
+  width: 483px;
+  height: 178px;
+  border: 1px;
+  margin-left: 50px;
+}
+.boxc{
+  width: 487px;
+  height: 182px;
+  border: 1px;
+  margin: auto;
+}
+.line_l1{
+  @include flex_between();
+  
+}
+.divider{
+  min-width: 170px;
+  min-height: 12px;
+  text-align: center;
+  margin-top: 80px;
+}
+}

@@ -1,0 +1,55 @@
+@import "../scss/variables";
+@import "../scss/extend";
+@import "../scss/includes";
+
+#Hero {
+  @include mobile {
+    background-color: $elementColor;
+  }
+  @include desktop {
+    background-color: #d7d7d7;
+  }
+
+  .boxes {
+    @extend .navwidth;
+    color: $primaryColor;
+    @include flex_around();
+    @include mobile {
+      flex-direction: column;
+    }
+    @include tablet {
+      flex-direction: row;
+    }
+    min-height: 15vh;
+    position: absolute;
+    margin-left: 650px;
+    .box{
+        width: 147px;
+        font-family: "Montserrat",sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 20.72px;
+        text-align: center;
+    }
+    .contact {
+      width: 147px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 18.29px;
+      text-align: center;
+      border-radius: 30px;
+      background: $primaryColor;
+      color: #000000;
+
+
+    }
+    div:hover {
+      color: blue;
+      text-decoration: underline;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}

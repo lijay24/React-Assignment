@@ -1,0 +1,74 @@
+@import "../scss/variables";
+@import "../scss/extend";
+@import "../scss/includes";
+
+#Contact {
+    @include mobile{
+        #Contact {
+            max-width: 400px;
+            margin: 0 auto;
+          }
+        
+          .hidden {
+            display: block;
+          }
+    }
+  padding: 20px;
+  text-align: center;
+  h2 {
+    max-width: 367px;
+    min-height: 74px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 38.37px;
+    letter-spacing: 0.3554em;
+    text-align: center;
+    border: 4px solid black;
+    margin-left: 476px;
+    margin-top: 138px;
+  }
+  p{
+    width: 50%;
+min-height: 72px;
+font-family: "Open Sans";
+font-size: 15px;
+font-weight: 400;
+line-height: 20.8px;
+text-align: center;
+margin-top: 50px;
+margin-left: 300px;
+
+  }
+  figure {
+    margin-top: 20px;
+  }
+  form {
+    display: grid;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  input {
+    padding: 15px 5px 15px 5px;
+    border: none;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  textarea {
+    height: 100px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+  }
+  button {
+    background: transparent;
+    border: none;
+    width: 100px;
+    margin: 0 auto;
+    padding: 10px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+  }
+}

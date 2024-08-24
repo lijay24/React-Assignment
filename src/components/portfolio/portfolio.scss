@@ -1,0 +1,70 @@
+@import "../scss/variables";
+@import "../scss/extend";
+@import "../scss/includes";
+
+#Portfolio{
+    @include mobile {
+        .project__line {
+            background-color: rgb(30, 29, 29);
+            color: white;
+            padding-bottom: 10px;
+            text-align: center;
+          }
+          
+          .projects {
+            display: grid;
+          }
+          
+          .hidden {
+            display: none;
+          }
+          .tab-flitters .filter {
+            grid-template-columns: repeat(3, 1fr);
+          }
+        
+          .filter > span:last-child {
+            grid-column: span 1;
+          }
+      }
+    margin-top: 20px;
+    .portfolio-wrapper {
+        @include image('../../assets/portfoliobg.png');
+        background-position: cover;
+        object-position: center;
+        display: grid;
+        place-items: center;
+      }
+      .tab-flitters {
+        background-color: rgb(30, 29, 29);
+        display: grid;
+        place-items: center;
+        padding: 50px;
+      }
+      .tab-flitters .filter {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      .filter > span {
+        text-align: center;
+        text-decoration: underline;
+        font-weight: 900;
+        font-size: 15px;
+        margin-top: 20px;
+      }
+      .filter > span:last-child {
+        grid-column: span 2;
+      }
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        overflow: hidden;
+      }
+      .hidden {
+        display: block;
+      }
+      
+}
